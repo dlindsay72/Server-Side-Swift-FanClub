@@ -2,3 +2,14 @@
 Apache CouchDB 1.6.0 (LogLevel=info) is starting.
 Apache CouchDB has started. Time to relax.
 [info] [<0.33.0>] Apache CouchDB has started on http://0.0.0.0:5984/
+[info] [<0.108.0>] 127.0.0.1 - - PUT /forum 201
+[info] [<0.110.0>] 127.0.0.1 - - POST /forum/_bulk_docs 201
+[info] [<0.1424.0>] 127.0.0.1 - - GET /forum/_all_docs=true 404
+[info] [<0.109.0>] 127.0.0.1 - - GET /forum/_all_docs?include_docs=true 200
+[info] [<0.1484.0>] 127.0.0.1 - - PUT /forum/_design/forum 201
+[info] [<0.4047.0>] Opening index for db: forum idx: _design/forum sig: "4f7877cf061e342a6d09e6cb560b69b2"
+[info] [<0.4052.0>] Starting index update for db: forum idx: _design/forum
+[info] [<0.4052.0>] Index update finished for db: forum idx: _design/forum
+[info] [<0.99.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.4045.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.4078.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
