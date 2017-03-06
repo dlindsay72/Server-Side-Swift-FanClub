@@ -117,3 +117,29 @@ Apache CouchDB has started. Time to relax.
 [info] [<0.9928.0>] 127.0.0.1 - - GET /forum/example_message_1 200
 [info] [<0.7578.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_replies?key="example_message_1" 200
 [info] [<0.2291.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.12940.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.13948.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.13951.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.12941.0>] 127.0.0.1 - - GET /forum/videos 200
+[info] [<0.12782.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_posts?key="videos"&descending=true 200
+[info] [<0.12911.0>] 127.0.0.1 - - GET /forum/videos 200
+[info] [<0.11795.0>] 127.0.0.1 - - GET /forum/example_message_3 200
+[info] [<0.5058.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_replies?key="example_message_3" 200
+[info] [<0.12960.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.13971.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.13966.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.11809.0>] 127.0.0.1 - - GET /forum/twostraws 200
+[info] [<0.12963.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.13954.0>] 127.0.0.1 - - GET /forum/songs 200
+[info] [<0.12953.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_posts?key="songs"&descending=true 200
+[info] [<0.13960.0>] 127.0.0.1 - - POST /forum 201
+[info] [<0.15202.0>] 127.0.0.1 - - GET /forum/songs 200
+[info] [<0.15207.0>] 127.0.0.1 - - GET /forum/b6a0bb0c9c42a17834f709bc05000836 200
+[info] [<0.181.0>] Starting index update for db: forum idx: _design/forum
+[info] [<0.181.0>] Index update finished for db: forum idx: _design/forum
+[info] [<0.15206.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_replies?key="b6a0bb0c9c42a17834f709bc05000836" 200
+[info] [<0.12958.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.15201.0>] 127.0.0.1 - - GET /forum/songs 200
+[info] [<0.12922.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_posts?key="songs"&descending=true 200
+[info] [<0.12952.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.15273.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200

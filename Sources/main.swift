@@ -272,6 +272,71 @@ router.post("/users/create") {
   }
 }
 
+router.post("/forum/:forumid/:messageid?") {
+  request, response, next in
+
+  guard let forumID = request.parameters["forumid"] else {
+    try response.status(.badRequest).end()
+    return
+  }
+
+  guard let username = request.session?["username"].string else {
+    send(error: "You are not logged in", code: .forbidden, to: response)
+    return
+  }
+
+  guard let fields = getPost(for: request, fields: ["title", "body"]) else {
+    send(error: "Missing required fields", code: .badRequest, to: response)
+    return
+  }
+  //OK to proceed!
+  var newMessage = [String: String]()
+  newMessage["body"] = fields["body"]!
+
+  // add the current date in the correct format
+  let formatter = DateFormatter()
+  formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+  newMessage["date"] = formatter.string(from: Date())
+
+  //mark the message as belonging to the current forum
+  newMessage["forum"] = forumID
+
+  //if we are replying to a message, use its ID as our parent
+  if let messageID = request.parameters["messageid"] {
+    newMessage["parent"] = messageID
+  } else {
+    // this is a top-level post, so it has no parent
+    newMessage["parent"] = ""
+  }
+  newMessage["title"] = fields["title"]!
+
+  //use the username value we unwrapped from the session
+  newMessage["user"] = username
+
+  //mark this document as a message so our views work
+  newMessage["type"] = "message"
+
+  //convert the dictionary to JSON and send it off to CouchDB
+  let newMEssageJSON = JSON(newMessage)
+
+  database.create(newMEssageJSON) { id, revision, doc, error in
+    defer { next() }
+
+    if let error = error {
+      send(error: "Message could not be created", code: .internalServerError, to: response)
+    } else if let id = id {
+      //the document was created successfully!
+      if newMessage["parent"]! == "" {
+        //this is a top-level post - load it now
+        _ = try? response.redirect("/forum/\(forumID)/\(id)")
+      } else {
+        //this was a reply - load the parent post
+        _ = try? response.redirect("/forum/\(forumID)/\(newMessage["parent"]!)")
+      }
+    }
+  }
+}
+
 
 Kitura.addHTTPServer(onPort: 8090, with: router)
 
