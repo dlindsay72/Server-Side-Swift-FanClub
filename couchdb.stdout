@@ -13,3 +13,33 @@ Apache CouchDB has started. Time to relax.
 [info] [<0.99.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
 [info] [<0.4045.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
 [info] [<0.4078.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+
+Apache CouchDB 1.6.0 (LogLevel=info) is starting.
+Apache CouchDB has started. Time to relax.
+[info] [<0.33.0>] Apache CouchDB has started on http://0.0.0.0:5984/
+[info] [<0.177.0>] Opening index for db: forum idx: _design/forum sig: "4f7877cf061e342a6d09e6cb560b69b2"
+[info] [<0.99.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.113.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.166.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.311.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.112.0>] 127.0.0.1 - - GET /forum/songs 200
+[info] [<0.114.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_posts?key="songs"&descending=true 200
+[info] [<0.100.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.111.0>] 127.0.0.1 - - GET /forum/videos 200
+[info] [<0.110.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_posts?key="videos"&descending=true 200
+[info] [<0.101.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.1759.0>] 127.0.0.1 - - GET /forum/songs 200
+[info] [<0.1750.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_posts?key="songs"&descending=true 200
+[info] [<0.1760.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.1991.0>] 127.0.0.1 - - GET /forum/songs 200
+[info] [<0.1793.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_posts?key="songs"&descending=true 200
+[info] [<0.108.0>] 127.0.0.1 - - GET /forum/songs 200
+[info] [<0.107.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_posts?key="songs"&descending=true 200
+[info] [<0.1167.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.109.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.1789.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.1792.0>] 127.0.0.1 - - GET /forum/videos 200
+[info] [<0.1782.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_posts?key="videos"&descending=true 200
+[info] [<0.2288.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forums 200
+[info] [<0.1785.0>] 127.0.0.1 - - GET /forum/songs 200
+[info] [<0.1786.0>] 127.0.0.1 - - GET /forum/_design/forum/_view/forum_posts?key="songs"&descending=true 200
